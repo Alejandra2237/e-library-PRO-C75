@@ -4,8 +4,11 @@ import * as Font from "expo-font";
 import db from "./config";
 import LoginScreen from "./screens/Login";
 import BottomTabNavigator from "./components/BottomTabNavigator";
+import { LogBox } from "react-native";
 
 import { createSwitchNavigator, createAppContainer } from "react-navigation";
+
+LogBox.ignoreAllLogs();
 
 export default class App extends Component {
   constructor() {
